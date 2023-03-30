@@ -46,7 +46,7 @@ class App extends Component {
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
       if(!this.state.imageUrl) return;
-        fetch('http://localhost:3000/image', {
+        fetch('https://brainbackend.onrender.com/image', {
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
